@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Links para fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <!-- Logotipo -->
+        <a href="index.html" class="logo">Portifólio</a>
+        <!-- Navegação principal -->
+        <nav class="navbar">
+            <a href="index.html">Início</a>
+            <a href="#progra-competencias">Formação</a>
+            <a href="#progra-portifolio">Portifólio</a>
+        </nav>
+
+        <!-- Botão de contato -->
+        <div class="btn-section">
+            <a href="#progra-formulario">
+                <button class="btn">Contato</button>
+            </a>    
+        </div>
+    </header>
+
+    <!-- Seção principal da página inicial -->
+    <section class="home">
+        <div class="flex">
+            <!-- Imagem de perfil -->
+            <img src="/portifólio/imagens/1.png" alt="profile">
+            <!-- Conteúdo textual -->
+            <div class="text-content">
+                <h2>Olá! <span>Meu Nome é </span></h2>
+                <h1><span>Luís </span>Carlos</h1>
+                <p>Sou <span>Analista de Sistemas</span></p>
+                <p class="paragraph">Sou estudante de Análise e Desenvolvimento de Sistemas, dedicado a explorar e dominar as diversas facetas da tecnologia. Durante minha jornada acadêmica, adquiri conhecimentos sólidos em áreas como programação, banco de dados, desenvolvimento web, engenharia de software e gestão de projeto Especializado em desvendar histórias ocultas nos números e transformá-las em ações impactantes.</p>
+
+                <!-- Links para redes sociais -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/luis.carlos.75685/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/luiscarlos6539/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/luis-carlos-3a59448b/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/luiscarlosbandeira" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+
+                <!-- Botão para download do CV -->
+                <div class="btn-curriculo">
+                    <a href="/portifólio/imagens/Luís Carlos Santos Bandeira.pdf" target="_blank"><button class="btn homeBtn">Download CV</button></a>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de competências -->
+    <section id="progra-competencias" class="competencias">
+        <h2 class="titulo">MINHAS <span>COMPETÊNCIAS</span></h2>
+        <div class="flex">
+            <!-- Bloco de competência 1 -->
+            <div class="competencias-box">
+                <img src="imagens/programacao.png" alt="programacao">
+                <h3>PROGRAMAÇÃO</h3>
+                <p>Experiências em linguagens como Java, Python, JavaScript, MySQL.</p>
+            </div>
+
+            <!-- Bloco de competência 2 -->
+            <div class="competencias-box">
+                <img src="imagens/desenvolvimento web.png" alt="web">
+                <h3>DESENVOLVIMENTO WEB</h3>
+                <p>Criação de sites e aplicações web utilizando HTML, CSS, JavaScript, React e frameworks de back-end como Node.js e Spring Boot.</p>
+            </div>
+
+            <!-- Bloco de competência 3 -->
+            <div class="competencias-box">
+                <img src="imagens/data analist.png" alt="analyst">
+                <h3>ANÁLISE DE SISTEMAS</h3>
+                <p>Habilidades em análise de requisitos, modelagem de sistemas e documentação técnica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do portfólio -->
+    <section id="progra-portifolio" class="portifolio">
+        <div class="interface">
+            <h2 class="titulo">MEU  <span>PORTIFÓLIO</span> </h2>
+            <div class="flex">
+                <!-- Projeto 1 -->
+                <div class="img-port" style="background-image: url(imagens/ecommerce.jpg)">
+                    <div class="overlay">Projeto 1</div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="img-port" style="background-image: url(imagens/seguranca.jpg)">
+                    <div class="overlay">Projeto 2</div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="img-port" style="background-image: url(imagens/restaurante.jpg)">
+                    <div class="overlay">Projeto 3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do formulário de contato -->
+    <section id="progra-formulario" class="formulario">
+        <div class="interface">
+            <h2 class="titulo">FALE <span>COMIGO</span></h2>
+            <form action="">
+                <!-- Campos do formulário -->
+                <input type="text" name="" id="" placeholder="Seu nome Completo" required>
+                <input type="text" name="" id="" placeholder="Seu E-mail" required>
+                <input type="text" name="" id="" placeholder="Seu Celular">
+                <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
+                <!-- Botão de enviar -->
+                <div class="btn-enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Seção sobre mim -->
+            <div class="footer-section">
+                <h3>Sobre Mim</h3>
+                <p>Analista de Dados e estudante de Análise e Desenvolvimento de Sistemas, especializado em desvendar histórias ocultas nos números.</p>
+            </div>
+            <!-- Seção de contato -->
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: <a href="mailto:luis.edu.ifac@gmail.com">luis.edu.ifac@gmail.com</a></p>
+                <p>Telefone: (69) 999139889</p>
+            </div>
+            <!-- Seção de redes sociais -->
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/luis.carlos.75685/" target="_blank"><i class='bx bxl-facebook'></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/luiscarlos6539/" target="_blank"><i class='bx bxl-instagram-alt'></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/luis-carlos-3a59448b/" target="_blank"><i class='bx bxl-linkedin-square'></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/luiscarlosbandeira" target="_blank"><i class='bx bxl-github'></i> GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luís Carlos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,484 @@
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Fontes brancas */
+}
+
+/* Estilos do Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .navbar{
+    display: flex;
+    gap: 100px;
+}
+
+header .navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header .btn-section .btn {
+    font-size: 15px;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    background: #FFB30D;
+    border: 2px solid #FFB30D;
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+header .btn-section .btn:hover {
+    background: transparent;
+}
+
+header .btn-section .bx-menu {
+    color: #fff;
+    font-size: 35px;
+    display: none;
+}
+
+/* Estilos das Redes Sociais */
+.social-media a {
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    margin: 10px 0;
+    margin-right: 20px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.social-media a:hover {
+    transform: translate(-5px);
+    color: #FFB30D;
+}
+
+/* Estilos da Seção Home */
+.home img {
+    width: 40vw;
+}
+
+/* Seções */
+section {
+    padding: 60px 10%;
+}
+
+.home .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos dos Títulos */
+h2.titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #FFB30D;
+}
+
+/* Estilos do Conteúdo Textual */
+.text-content {
+    max-width: 67rem;
+}
+
+.text-content span {
+    color: #FFB30D;
+}
+
+.text-content h2 {
+    font-size: 25px;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    font-family: jost;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.text-content p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.text-content .paragraph {
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    color: #666;
+}
+
+.home .text-content .btn-section {
+    margin-top: 20px;
+}
+
+/* Estilos dos Botões */
+.btn {
+    font-size: 15px;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    background: #FFB30D;
+    border: 2px solid #FFB30D;
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+/* Estilos da Seção de Competências */
+.competencias .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.competencias-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ffffff69;
+    margin-top: 45px;
+    transition: .2s;
+    align-items: center;
+    text-align: center;
+}
+
+.competencias .competencias-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.competencias .competencias-box h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.competencias .competencias-box p {
+    font-size: 13px;
+}
+
+.competencias-box img {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilos da Seção de Portfólio */
+.portifolio .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #FFB30D;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.img-port .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Estilos da Seção de Formulário */
+.formulario .interface form input,
+.formulario .interface form textarea {
+    width: 100%;
+    background-color: #2e2e2e;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form textarea {
+    resize: none;
+}
+
+.formulario .btn-enviar input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #FFB30D;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #FFB30D;
+    transform: scale(1.05);
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFB30D;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul {
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFB30D;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 1024px) {
+    .logo {
+        display: none;
+    }
+
+    header {
+        padding: 20px 5%;
+        display: flex;
+        gap: 10px;
+    }
+    
+    /* Botão de contato */
+    header .btn-section .btn {
+        font-size: 14px;
+        padding: 0.4rem 1rem;
+    }
+
+    header .navbar{
+        display: flex;
+        gap: 5px;
+    }
+
+    .home .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .text-content,
+    .home img {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .competencias .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competencias-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .portifolio .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-port {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    header {
+        padding: 20px 5%;
+        display: flex;
+        gap: 10px;
+    }
+    
+    /* Botão de contato */
+    header .btn-section .btn {
+        font-size: 14px;
+        padding: 0.4rem 1rem;
+    }
+
+    header .navbar{
+        display: flex;
+        gap: 5px;
+    }
+
+    .home .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .text-content,
+    .home img {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .competencias .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competencias-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .portifolio .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-port {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustes adicionais para telas menores */
+@media (max-width: 480px) {
+    header {
+        padding: 20px 2%;
+    }
+
+    .home .flex {
+        padding: 20px;
+    }
+
+    header .btn-section .btn {
+        font-size: 12px;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .home .text-content h1 {
+        font-size: 24px;
+    }
+
+    .home .text-content h2 {
+        font-size: 18px;
+    }
+
+    .competencias-box img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .img-port {
+        height: 150px;
+    }
+}
